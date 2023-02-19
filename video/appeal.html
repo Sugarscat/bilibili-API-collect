@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>稿件投诉 | 哔哩哔哩-API</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    <link rel="icon" href="./logo.png">
+    <meta name="description" content="本项目旨在对 B站 WEB、APP、TV 等客户端中，散落在世界各地的野生 API 进行收集整理，研究使用方法并对其进行说明，运用了黑箱法、控制变量法、代码逆向分析、拆包及反编译法、网络抓包法等研究办法。">
+    
+    <link rel="preload" href="/bilibili-API-collect/assets/css/0.styles.83c4a1aa.css" as="style"><link rel="preload" href="/bilibili-API-collect/assets/js/app.e919f30f.js" as="script"><link rel="preload" href="/bilibili-API-collect/assets/js/2.be80be1e.js" as="script"><link rel="preload" href="/bilibili-API-collect/assets/js/128.7b983963.js" as="script"><link rel="prefetch" href="/bilibili-API-collect/assets/js/10.6c5e4cc0.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/100.1e5ac7ce.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/101.061b70c5.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/102.c14441f1.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/103.8a2b1615.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/104.8db386eb.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/105.8e02143e.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/106.a19e48ce.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/107.75e9d0b0.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/108.148c7914.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/109.f11aa4f3.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/11.9af9ef03.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/110.5c11d48d.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/111.1d9b5830.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/112.6a5359e0.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/113.e02101a7.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/114.5e08107e.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/115.231081b3.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/116.952da5e4.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/117.d8a635c0.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/118.4faa1636.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/119.f2089abd.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/12.f18864ff.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/120.9947e8fb.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/121.4c6ec13e.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/122.7ca90907.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/123.32273f7f.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/124.0ada5295.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/125.717da676.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/126.df71b86a.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/127.7ef146b2.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/129.4a03eba7.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/13.95c5b7a8.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/130.a8312873.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/131.c1388989.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/132.ddbacc2d.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/133.0bc2123f.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/134.a395326a.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/135.2fbbfce4.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/136.a6996200.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/137.cb48e15a.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/138.85fba299.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/139.77e414d4.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/14.8bd73948.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/140.5af4f6a3.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/141.1c49983c.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/142.5c6a1416.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/143.3a3381b9.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/144.0ec86d39.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/145.6f56f35c.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/146.e84aa736.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/147.6f4651fe.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/15.dfb5705c.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/16.fc960243.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/17.ab7b7c6b.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/18.58dd66ca.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/19.164c5d16.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/20.a0585dc0.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/21.25a2db0e.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/22.f167a0eb.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/23.85be0a1c.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/24.4c4a9471.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/25.d7f46481.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/26.2e2abf90.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/27.500fc824.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/28.8aa52689.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/29.08a1e6fe.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/3.68a8afbb.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/30.de346bdd.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/31.7453e58c.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/32.e838ba51.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/33.853d7660.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/34.fb9de046.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/35.b6bf9d9d.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/36.9dd9cd3d.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/37.e55abb40.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/38.17f82723.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/39.89377e51.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/4.6ac6c829.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/40.5ea9fbd7.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/41.f94ba019.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/42.efd4cf05.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/43.7b8474d9.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/44.319621f3.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/45.047d8a7e.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/46.1b7fddbe.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/47.49677501.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/48.ca2f5ffe.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/49.37608ae5.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/5.2a95f8bb.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/50.7903037c.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/51.cd0deaeb.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/52.4b6b8f92.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/53.13556b4f.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/54.e8d175d8.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/55.0cbecb1b.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/56.c13384d4.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/57.ef5f4336.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/58.b981cf37.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/59.28b0efe1.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/6.5305bca2.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/60.3761c95a.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/61.0dfd2bfa.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/62.5d68ce0a.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/63.cfb8ed82.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/64.1c2eb2d7.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/65.65977b4c.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/66.7671489d.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/67.2270b9a2.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/68.ea041d3a.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/69.71b52bdc.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/7.e1cb412f.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/70.284bbfb4.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/71.752bfce6.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/72.44b509f9.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/73.921c86b5.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/74.e9ec6fd9.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/75.97617bde.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/76.c90aa1f8.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/77.385d1353.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/78.60e11bc3.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/79.cee1454c.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/8.3cca8117.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/80.4cc43bc3.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/81.a936d392.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/82.c95d15e3.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/83.39d69dc5.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/84.074f5bb5.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/85.69583845.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/86.bdb38ec9.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/87.f5976a43.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/88.eb9cf45d.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/89.b19d587b.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/9.b12b6051.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/90.9e53ccfe.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/91.a625de24.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/92.29c060e0.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/93.2dd1ccf6.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/94.2ff6b45b.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/95.88379c9a.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/96.d7891926.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/97.269cd626.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/98.5aefaeb7.js"><link rel="prefetch" href="/bilibili-API-collect/assets/js/99.71562dfd.js">
+    <link rel="stylesheet" href="/bilibili-API-collect/assets/css/0.styles.83c4a1aa.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/bilibili-API-collect/" class="home-link router-link-active"><!----> <span class="site-name">哔哩哔哩-API</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/bilibili-API-collect/" class="nav-link">
+  介绍
+</a></div><div class="nav-item"><a href="/bilibili-API-collect/contents.html" class="nav-link">
+  目录
+</a></div><div class="nav-item"><a href="https://github.com/SocialSisterYi/bilibili-API-collect" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/bilibili-API-collect/" class="nav-link">
+  介绍
+</a></div><div class="nav-item"><a href="/bilibili-API-collect/contents.html" class="nav-link">
+  目录
+</a></div><div class="nav-item"><a href="https://github.com/SocialSisterYi/bilibili-API-collect" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>稿件投诉</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bilibili-API-collect/video/appeal.html#附件上传" class="sidebar-link">附件上传</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/bilibili-API-collect/video/appeal.html#获取投诉类型" class="sidebar-link">获取投诉类型</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/bilibili-API-collect/video/appeal.html#投诉稿件" class="sidebar-link">投诉稿件</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="稿件投诉"><a href="#稿件投诉" class="header-anchor">#</a> 稿件投诉</h1> <hr> <ul><li><a href="#%E9%99%84%E4%BB%B6%E4%B8%8A%E4%BC%A0">附件上传</a></li> <li><a href="#%E8%8E%B7%E5%8F%96%E6%8A%95%E8%AF%89%E7%B1%BB%E5%9E%8B">获取投诉类型</a></li> <li><a href="#%E6%8A%95%E8%AF%89%E7%A8%BF%E4%BB%B6">投诉稿件</a></li></ul> <hr> <h2 id="附件上传"><a href="#附件上传" class="header-anchor">#</a> 附件上传</h2> <blockquote><p>附件上传与视频封面上传共用一个api。</p></blockquote> <h2 id="获取投诉类型"><a href="#获取投诉类型" class="header-anchor">#</a> 获取投诉类型</h2> <blockquote><p>https://api.bilibili.com/x/web-interface/archive/appeal/tags</p></blockquote> <p><em>请求类型：GET</em></p> <p><strong>json回复：</strong></p> <table><thead><tr><th>参数名</th> <th>类型</th> <th>内容</th> <th>备注</th></tr></thead> <tbody><tr><td>code</td> <td>num</td> <td></td> <td>成功为0</td></tr> <tr><td>message</td> <td>str</td> <td></td> <td>成功为0</td></tr> <tr><td>ttl</td> <td>num</td> <td>1</td> <td></td></tr> <tr><td>data</td> <td>List&lt;object&gt;</td> <td></td> <td></td></tr></tbody></table> <p><code>data</code>数组：</p> <table><thead><tr><th>项</th> <th>类型</th> <th>内容</th> <th>备注</th></tr></thead> <tbody><tr><td>0</td> <td>obj</td> <td>类型条目 1</td> <td></td></tr> <tr><td>n</td> <td>obj</td> <td>类型条目 (n+1)</td> <td>按照指定的顺序排列</td></tr> <tr><td>……</td> <td>obj</td> <td>……</td> <td>……</td></tr></tbody></table> <p><code>data</code>数组中的对象</p> <table><thead><tr><th>项</th> <th>类型</th> <th>内容</th> <th>备注</th></tr></thead> <tbody><tr><td>tid</td> <td>num</td> <td>类型tid</td> <td></td></tr> <tr><td>business</td> <td>num</td> <td></td> <td>意义不明</td></tr> <tr><td>weight</td> <td>num</td> <td>权重</td> <td></td></tr> <tr><td>round</td> <td>num</td> <td></td> <td>意义不明</td></tr> <tr><td>state</td> <td>num</td> <td></td> <td>意义不明</td></tr> <tr><td>name</td> <td>str</td> <td>类型名称</td> <td></td></tr> <tr><td>remark</td> <td>str</td> <td>类型备注</td> <td></td></tr> <tr><td>ctime</td> <td>str</td> <td></td> <td>意义不明</td></tr> <tr><td>mtime</td> <td>str</td> <td></td> <td>意义不明</td></tr> <tr><td>controls</td> <td>拥有时：object<br>没有时：null</td> <td>详细信息填写提示</td> <td></td></tr></tbody></table> <p><code>data</code>数组中的对象中的<code>controls</code>对象：</p> <table><thead><tr><th>项</th> <th>类型</th> <th>内容</th> <th>备注</th></tr></thead> <tbody><tr><td>tid</td> <td>num</td> <td>同上</td> <td></td></tr> <tr><td>bid</td> <td>num</td> <td></td> <td>意义不明</td></tr> <tr><td>name</td> <td>str</td> <td>提示名称</td> <td></td></tr> <tr><td>title</td> <td>str</td> <td>提示标题</td> <td></td></tr> <tr><td>component</td> <td>str</td> <td>需要填入的类型</td> <td></td></tr> <tr><td>placeholder</td> <td>str</td> <td>文本框占位符</td> <td></td></tr> <tr><td>required</td> <td>num</td> <td>是否为必填</td> <td></td></tr></tbody></table> <p><strong>示例：</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">--location</span> <span class="token parameter variable">--request</span> GET <span class="token string">'https://api.bilibili.com/x/web-interface/archive/appeal/tags'</span>
+</code></pre></div><details><summary>查看响应示例</summary>
+```json
+{
+    &quot;code&quot;: 0,
+    &quot;message&quot;: &quot;0&quot;,
+    &quot;ttl&quot;: 1,
+    &quot;data&quot;: [
+        {
+            &quot;tid&quot;: 1,
+            &quot;business&quot;: 1,
+            &quot;weight&quot;: 1,
+            &quot;round&quot;: 2,
+            &quot;state&quot;: 1,
+            &quot;name&quot;: &quot;有其他问题&quot;,
+            &quot;remark&quot;: &quot;为帮助审核人员更快处理，请补充问题类型和出现位置等详细信息&quot;,
+            &quot;ctime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;mtime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;controls&quot;: null
+        },
+        {
+            &quot;tid&quot;: 9,
+            &quot;business&quot;: 1,
+            &quot;weight&quot;: 30,
+            &quot;round&quot;: 2,
+            &quot;state&quot;: 1,
+            &quot;name&quot;: &quot;引战&quot;,
+            &quot;remark&quot;: &quot;为帮助审核人员更快处理, 请补充引战的话题和出现位置&quot;,
+            &quot;ctime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;mtime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;controls&quot;: null
+        },
+        {
+            &quot;tid&quot;: 10,
+            &quot;business&quot;: 1,
+            &quot;weight&quot;: 20,
+            &quot;round&quot;: 2,
+            &quot;state&quot;: 1,
+            &quot;name&quot;: &quot;不能参加充电&quot;,
+            &quot;remark&quot;: &quot;为帮助审核人员更快处理, 请补充问题类型和出现位置等详细信息&quot;,
+            &quot;ctime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;mtime&quot;: &quot;2018-08-23T11:35:28+08:00&quot;,
+            &quot;controls&quot;: null
+        },
+        {
+            &quot;tid&quot;: 52,
+            &quot;business&quot;: 1,
+            &quot;weight&quot;: 35,
+            &quot;round&quot;: 2,
+            &quot;state&quot;: 1,
+            &quot;name&quot;: &quot;转载/自制类型错误&quot;,
+            &quot;remark&quot;: &quot;为帮助审核人员更快处理, 请补充原创作品出处&quot;,
+            &quot;ctime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;mtime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;controls&quot;: [
+                {
+                    &quot;tid&quot;: 52,
+                    &quot;bid&quot;: 1,
+                    &quot;name&quot;: &quot;出处&quot;,
+                    &quot;title&quot;: &quot;原创视频出处&quot;,
+                    &quot;component&quot;: &quot;link&quot;,
+                    &quot;placeholder&quot;: &quot;请填写链接&quot;,
+                    &quot;required&quot;: 1
+                }
+            ]
+        },
+        {
+            &quot;tid&quot;: 2,
+            &quot;business&quot;: 1,
+            &quot;weight&quot;: 100,
+            &quot;round&quot;: 1,
+            &quot;state&quot;: 1,
+            &quot;name&quot;: &quot;违法违禁&quot;,
+            &quot;remark&quot;: &quot;为帮助审核人员更快处理，补充违规内容出现位置&quot;,
+            &quot;ctime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;mtime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;controls&quot;: null
+        },
+        {
+            &quot;tid&quot;: 3,
+            &quot;business&quot;: 1,
+            &quot;weight&quot;: 90,
+            &quot;round&quot;: 1,
+            &quot;state&quot;: 1,
+            &quot;name&quot;: &quot;色情&quot;,
+            &quot;remark&quot;: &quot;为帮助审核人员更快处理，补充违规内容出现位置&quot;,
+            &quot;ctime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;mtime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;controls&quot;: null
+        },
+        {
+            &quot;tid&quot;: 4,
+            &quot;business&quot;: 1,
+            &quot;weight&quot;: 80,
+            &quot;round&quot;: 1,
+            &quot;state&quot;: 1,
+            &quot;name&quot;: &quot;低俗&quot;,
+            &quot;remark&quot;: &quot;为帮助审核人员更快处理，补充违规内容出现位置&quot;,
+            &quot;ctime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;mtime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;controls&quot;: null
+        },
+        {
+            &quot;tid&quot;: 5,
+            &quot;business&quot;: 1,
+            &quot;weight&quot;: 70,
+            &quot;round&quot;: 1,
+            &quot;state&quot;: 1,
+            &quot;name&quot;: &quot;赌博诈骗&quot;,
+            &quot;remark&quot;: &quot;为帮助审核人员更快处理，补充违规内容出现位置&quot;,
+            &quot;ctime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;mtime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;controls&quot;: null
+        },
+        {
+            &quot;tid&quot;: 6,
+            &quot;business&quot;: 1,
+            &quot;weight&quot;: 60,
+            &quot;round&quot;: 1,
+            &quot;state&quot;: 1,
+            &quot;name&quot;: &quot;血腥暴力&quot;,
+            &quot;remark&quot;: &quot;为帮助审核人员更快处理，补充违规内容出现位置&quot;,
+            &quot;ctime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;mtime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;controls&quot;: null
+        },
+        {
+            &quot;tid&quot;: 7,
+            &quot;business&quot;: 1,
+            &quot;weight&quot;: 50,
+            &quot;round&quot;: 1,
+            &quot;state&quot;: 1,
+            &quot;name&quot;: &quot;人身攻击&quot;,
+            &quot;remark&quot;: &quot;为帮助审核人员更快处理，补充违规内容出现位置&quot;,
+            &quot;ctime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;mtime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;controls&quot;: null
+        },
+        {
+            &quot;tid&quot;: 8,
+            &quot;business&quot;: 1,
+            &quot;weight&quot;: 40,
+            &quot;round&quot;: 1,
+            &quot;state&quot;: 1,
+            &quot;name&quot;: &quot;与站内其他视频撞车&quot;,
+            &quot;remark&quot;: &quot;为帮助审核人员更快处理, 请描述撞车信息&quot;,
+            &quot;ctime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;mtime&quot;: &quot;2018-08-23T00:30:04+08:00&quot;,
+            &quot;controls&quot;: [
+                {
+                    &quot;tid&quot;: 8,
+                    &quot;bid&quot;: 1,
+                    &quot;name&quot;: &quot;撞车对象&quot;,
+                    &quot;title&quot;: &quot;撞车对象&quot;,
+                    &quot;component&quot;: &quot;input&quot;,
+                    &quot;placeholder&quot;: &quot;BVID&quot;,
+                    &quot;required&quot;: 1
+                }
+            ]
+        },
+        {
+            &quot;tid&quot;: 10000,
+            &quot;business&quot;: 1,
+            &quot;weight&quot;: 10,
+            &quot;round&quot;: 1,
+            &quot;state&quot;: 1,
+            &quot;name&quot;: &quot;青少年不良信息&quot;,
+            &quot;remark&quot;: &quot;为帮助审核人员更快处理, 请补充违规内容出现位置&quot;,
+            &quot;ctime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;mtime&quot;: &quot;2018-08-13T15:41:20+08:00&quot;,
+            &quot;controls&quot;: null
+        },
+        {
+            &quot;tid&quot;: 10013,
+            &quot;business&quot;: 1,
+            &quot;weight&quot;: 37,
+            &quot;round&quot;: 1,
+            &quot;state&quot;: 1,
+            &quot;name&quot;: &quot;不良封面/标题&quot;,
+            &quot;remark&quot;: &quot;为帮助审核人员更快处理, 请描述详细信息&quot;,
+            &quot;ctime&quot;: &quot;2019-04-17T19:18:09+08:00&quot;,
+            &quot;mtime&quot;: &quot;2019-04-17T20:42:25+08:00&quot;,
+            &quot;controls&quot;: null
+        }
+    ]
+}
+```
+</details> <h2 id="投诉稿件"><a href="#投诉稿件" class="header-anchor">#</a> 投诉稿件</h2> <blockquote><p>https://api.bilibili.com/x/web-interface/archive/appeal</p></blockquote> <p><em>请求方式：POST</em></p> <p>认证方式：Cookie（SESSDATA)</p> <p><strong>正文参数：</strong></p> <table><thead><tr><th>参数名</th> <th>类型</th> <th>内容</th> <th>必要性</th> <th>备注</th></tr></thead> <tbody><tr><td>csrf</td> <td>str</td> <td>csrf token(位于cookie)</td> <td>必要</td> <td>在url params中</td></tr> <tr><td>jsonp</td> <td>str</td> <td>jsonp</td> <td>必要?</td> <td>意义不明，位于url params</td></tr> <tr><td>aid</td> <td>num</td> <td>稿件aid</td> <td>必要</td> <td>位于request body</td></tr> <tr><td>tid</td> <td>num</td> <td>投诉理由tid</td> <td>必要</td> <td>位于request body</td></tr> <tr><td>desc</td> <td>str</td> <td>投诉理由详细描述</td> <td>必要</td> <td>位于request body</td></tr> <tr><td>attach</td> <td>str</td> <td>附件（多个附件用逗号隔开</td> <td>非必要</td> <td>位于request body</td></tr></tbody></table> <p><strong>json回复：</strong></p> <table><thead><tr><th>参数名</th> <th>类型</th> <th>内容</th> <th>备注</th></tr></thead> <tbody><tr><td>code</td> <td>num</td> <td>返回码</td> <td>成功为0</td></tr> <tr><td>message</td> <td>str</td> <td></td> <td>成功为0</td></tr> <tr><td>ttl</td> <td></td> <td>1</td> <td></td></tr></tbody></table> <p>**示例：举报av号为61080066的视频，理由为人身攻击，描述为“xxxxx”，并附带了一个图片附件</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">--location</span> <span class="token parameter variable">--request</span> POST <span class="token string">'https://api.bilibili.com/x/web-interface/archive/appeal?jsonp=jsonp&amp;csrf=xxxx'</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">--form</span> <span class="token string">'aid=&quot;61080066&quot;'</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">--form</span> <span class="token string">'tid=&quot;7&quot;'</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">--form</span> <span class="token string">'desc=&quot;xxxxx&quot;'</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">--form</span> <span class="token string">'attach=&quot;https://archive.biliimg.com/bfs/archive/xxxxx.png&quot;'</span>
+</code></pre></div><details><summary>查看响应示例</summary>
+```json
+{
+	&quot;code&quot;:0,
+	&quot;message&quot;:&quot;0&quot;,
+	&quot;ttl&quot;:1
+}
+```
+</details></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/bilibili-API-collect/assets/js/app.e919f30f.js" defer></script><script src="/bilibili-API-collect/assets/js/2.be80be1e.js" defer></script><script src="/bilibili-API-collect/assets/js/128.7b983963.js" defer></script>
+  </body>
+</html>
